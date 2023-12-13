@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar producto</title>
+</head>
+<body>
+    <h2>Actualizar Producto</h2>
+    <form action="/actualizar" method="POST">
+        <input id="id" name="id" value="<%= producto.Id %>" hidden>
+  
+        <label for="nombre">Nombre:</label>
+        <input type="text" value="<%= producto.Nombre %>" name = "nombre" id="productName"><br>
+  
+        <label for="precio">Precio:</label>
+        <input type="number" value="<%= producto.Precio %>" name = "precio" id="productPrice"><br>
+
+        <button type="submit">Actualizar</button>
+        <button type="reset">Borrar</button>
+    </form>
+</body>
+</html>

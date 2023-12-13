@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facturas</title>
+</head>
+<body>
+  <h2>Lista de Facturas</h2>
+  <table id="tabla_facturas">
+      <thead>
+          <tr>
+            <th>Id</th>
+            <th>Numero</th>
+            <th>Fecha</th>
+            <th>Total productos</th>
+            <th>Precio Total</th>
+          </tr>
+      </thead>
+      <tbody id="datos_facturas">
+        <% consulta1.forEach(x =>{  %>
+          <tr>
+              <th scope="row"><%= x.Id %></th>
+              <td><%= x.Numero %></td>
+              <td><%= x.Fecha %></td>
+              <td><%= x.TotalProductos %></td>
+              <td><%= x.PrecioTotal %></td>
+          </tr>
+        <%})  %>
+      </tbody>
+  </table>
+  <a href="/crearFactura" >Adicionar</a>
+  <a href="/">Regresar</a>
+</body>
+</html>

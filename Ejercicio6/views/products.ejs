@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+</head>
+<body>
+  <h2>Lista de Productos</h2>
+  <table id="tabla_productos">
+      <thead>
+          <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Precio</th>
+          </tr>
+      </thead>
+      <tbody id="datos_productos">
+        <% consulta1.forEach(x =>{  %>
+          <tr>
+              <th scope="row"><%= x.Id %></th>
+              <td><%= x.Nombre %></td>
+              <td><%= x.Precio %></td>
+              <td>
+                  <a href="/editar/<%= x.Id %>">Editar</a>
+                  <a href="/borrar/<%= x.Id %>">Borrar</a>
+              </td>
+          </tr>
+        <%})  %>
+      </tbody>
+  </table>
+  <a href="/crear" >Adicionar</a>
+  <a href="/">Regresar</a>
+</body>
+</html>

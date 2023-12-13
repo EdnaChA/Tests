@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear producto</title>
+</head>
+<body>
+      <h2>Formulario Factura</h2>
+      <form action="/salvarFactura" method="POST">
+          <label for="id">Id:</label>
+          <input type="number" name = "id" id="invoiceId"><br>
+    
+          <label for="numero">Número de Factura:</label>
+          <input type="text" name = "numero" id="invoiceNumber"><br>
+ 
+          <label for="fecha">Fecha:</label>
+          <input type="date" name = "fecha" id="invoiceDate"><br>
+
+          <h3>Lista de Productos</h3>
+          <label for="id">Id Producto:</label>
+          <input type="number" name = "id_product" id="productId"><br>
+          <label for="cantidad">Cantidad:</label>
+          <input type="number" name = "cantidad" id="quantity"><br>
+
+          <button type="submit">!Enviar!</button>
+          <button type="reset">Borrar</button>
+      </form>
+</body>
+</html>

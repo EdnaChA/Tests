@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear producto</title>
+</head>
+<body>
+      <h2>Formulario Producto</h2>
+      <form action="/salvar" method="POST">
+          <label for="id">Id:</label>
+          <input type="number" name = "id" id="productId"><br>
+    
+          <label for="nombre">Nombre:</label>
+          <input type="text" name = "nombre" id="productName"><br>
+    
+          <label for="precio">Precio:</label>
+          <input type="number" name = "precio" id="productPrice"><br>
+
+          <button type="submit">!Enviar!</button>
+          <button type="reset">Borrar</button>
+      </form>
+</body>
+</html>

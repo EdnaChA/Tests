@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="/estilos.css" type="text/css"/>-->
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Prueba técnica</h1>
+    </header>
+    <h2 id="first_title">
+        Ingrese el año que desea verificar si es bisiesto.
+    </h2>
+    <section id="formularios">
+        <form id = "bisiestoForm">   
+            <label for="año">Año:</label>
+            <input type="number" name ="año" id="añoIngresado"><br>
+
+            <button type="button" id="send_year">!Revisar!</button> 
+            <button type="reset" id="clear_year">Borrar</button> 
+        </form>
+    </section>
+    <section id="resultado">
+        <h2>Resultado</h2>
+        <p id="respuesta_año"></p>
+    </section>
+</body>
+<script src="funciones.js"></script>
+</html>
