@@ -1,0 +1,110 @@
+html {
+    scroll-behavior: smooth;
+    font-family: 'Calibri';
+}
+body{
+    background-color: #03353B;
+}
+h1, h2{
+    text-align: center;
+    color: white;
+}
+section{
+    text-align: center;
+    color: #03353B;
+    background-color: white;
+    border-radius: 10px;
+    padding: 80px;
+    margin: 0px 400px;
+    box-shadow: 20px -16px teal;
+}
+div{
+    display: inline-block;
+}
+.form_card1{
+    text-align: center;
+    color: #03353B;
+    background-color: white;
+    border-radius: 15px;
+
+    padding: 40px;  
+    margin-top: 30px; 
+    margin-left: 400px; 
+    margin-right: 10px; 
+
+    box-shadow: 10px -10px teal;
+    font-size: 20px;
+    font-weight: 900;
+}
+.form_card2{
+    text-align: center;
+    color: #03353B;
+    background-color: white;
+    border-radius: 15px;
+
+    padding: 40px;  
+    margin-top: 30px; 
+    margin-left: 10px; 
+    margin-right: 400px; 
+
+    box-shadow: 10px -10px teal;
+    font-size: 20px;
+    font-weight: 900;
+}
+button{
+    font-family: 'Calibri';
+    padding: 8px 24px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid white;
+    background-color: teal;
+    color: white;
+}
+#tabla_productos,#tabla_facturas{
+    width: 900px;
+    margin: 0px auto 50px;
+    text-align: center;
+    border: 1px solid #03353B;
+    background-color:white;
+    color: #03353B;
+    font-size: 25px;
+}
+thead{
+    background-color: #03353B;
+    color:white;
+}
+td{
+    height: 50px;
+}
+
+#datos_productos, #datos_facturas{
+    font-size: 16px;
+}
+
+a{
+    font-family: 'Calibri';
+    padding: 8px 24px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid white;
+    background-color: teal;
+    color: white;
+}
+
+.botones, .botones a{
+    text-align: center;
+    text-decoration: none;
+}
+form{
+    text-align: center;
+    color: #03353B;
+    background-color: beige;
+    border-radius: 10px;
+    padding: 80px;
+    margin: 30px 400px;
+    box-shadow: 16px -16px teal;
+    font-size: 20px;
+    font-weight: 900;
+}
